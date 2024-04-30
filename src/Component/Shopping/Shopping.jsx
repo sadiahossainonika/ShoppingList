@@ -38,6 +38,7 @@ const Shopping = () => {
     e.preventDefault();
 
     if (!list) {
+      notify()
       setListerr("name is required!");
     } else {
       const db = getDatabase();
